@@ -77,8 +77,11 @@ addbook.addEventListener("click", function (event) {
         toggleLock(lockerButton, deleteButton);
         
     });
+    deleteButton.addEventListener("click", function () {
+        div.remove();
+    });
+   
 });
-
 
 function toggleLock(lockerButton, deleteButton) {
     if (lockerButton.querySelector('i').classList.contains('fa-lock-open')) {

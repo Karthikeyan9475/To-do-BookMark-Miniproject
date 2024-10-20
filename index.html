@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link rel="icon" type="image/png" href="images/pngwing.com (1).png">
+    <link rel="stylesheet" href="style.css">
+    <!-------google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-----Font awesome-------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <h1>BookMark📕</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <button class="locker"><i class="fa-solid fa-lock-open"></i></button>
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>The main idea from Rich Dad, Poor Dad is that the rich focus on gaining skills, not just making money. The book suggests that acquiring valuable skills. It is the way to break free from financial struggles and build real wealth instead of working just for a paycheck.</p>
+            <button class="Delete" onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="book title" id="book-title-input"/>
+            <input type="text" placeholder="book author" id="book-author-input"/>
+            <textarea placeholder="short description" id="book-description-input"></textarea>
+            <button class="btn" id="add-book">ADD</button>
+            <button class="btn" id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
